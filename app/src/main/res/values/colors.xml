@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--customColors-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#00385E</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorCeleste">#8DA8EA</color>
+    <color name="colorSky">#ACC6F8</color>
+    <color name="colorAgua">#7589D9</color>
+    <color name="colorBlanco">#FFFFFF</color>
+
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="colorAccent1">#FF4081</color>
+
+    <color name="mateAzul">#00385E</color>
+    <color name="mateAzulMarino">#f700385e</color>
+    <color name="mateAzulClaro">#0071BC</color>
+    <color name="mateAzulOpaco">#5DA0D0</color>
+    <color name="mateCeleste">#B1D3EA</color>
+    <color name="matePlomo">#B3B3B3</color>
+    <color name="matePlomoClaro">#D2D3D3</color>
+
+    <color name="grisCar">#EDEFF0</color>
+    <color name="grisCarFondo">#D6DADC</color>
+
+    <color name="colorGreyDark">#000000</color>
+    <color name="colorGrey">#424242</color>
+
+    <color name="colorTurquesa">#449FED </color>
+    <color name="colorDorado">#FFAB00</color>
+    <color name="colorSol">#FF9126</color>
+
+
+</resources>
