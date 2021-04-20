@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">tesis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_principal">Menu principal</string>
+    <string name="informacion">Acerca de</string>
+    <string name="buscar_producto">Buscar producto</string>
+    <string name="buscar_ra">Buscar RA</string>
+    <string name="buscar_producto">Buscar producto</string>
+    <string name="ayuda_a_combatir">Ayuda a combatir</string>
+</resources>
