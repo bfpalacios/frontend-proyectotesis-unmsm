@@ -16,7 +16,6 @@ public class SearchRA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_r);
-
         this.ScanQr();
     }
 
@@ -35,5 +34,6 @@ public class SearchRA extends AppCompatActivity {
 
     private void ScanQr() {
         new IntentIntegrator(SearchRA.this).initiateScan();
+        new IntentIntegrator(SearchRA.this).setPrompt("Escanea un producto");
     }
 }

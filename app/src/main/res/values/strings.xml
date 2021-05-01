@@ -6,6 +6,7 @@
     <string name="informacion">Acerca de</string>
     <string name="buscar_producto">Buscar producto</string>
     <string name="buscar_ra">Buscar RA</string>
-    <string name="buscar_producto">Buscar producto</string>
     <string name="ayuda_a_combatir">Ayuda a combatir</string>
+    <string name="information_title">Instrucciones como usar el app</string>
+    <string name="text_test">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius a sapien sit amet pretium. Nullam posuere est sit amet erat vulputate porta quis at justo. Phasellus nec vulputate orci. Curabitur congue sem non neque fringilla, ac semper lectus ultrices. Integer laoreet justo malesuada scelerisque condimentum.</string>
 </resources>
