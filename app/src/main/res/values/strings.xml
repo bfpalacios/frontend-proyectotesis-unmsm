@@ -6,6 +6,16 @@
     <string name="informacion">Acerca de</string>
     <string name="buscar_producto">Buscar producto</string>
     <string name="buscar_ra">Buscar RA</string>
-    <string name="buscar_producto">Buscar producto</string>
     <string name="ayuda_a_combatir">Ayuda a combatir</string>
+    <string name="information_title">Instrucciones como usar el app</string>
+
+    <string-array name="texttest">
+        <item>1. Acercar la camara del celular al producto en un rango no mayor a 1 metro</item>
+        <item>2. Apuntar con la camara al código de marcador del producto(código patron) a consultar</item>
+        <item>3. Al procesar el marcador(codigo patron) aparecera en la pantalla de manera instantanea la siguiente información:</item>
+        <item>3.1. Menu a preparar con el producto</item>
+        <item>3.2 Lista de Enfermedad(es) cronica(s) que combate el producto oriundo</item>
+        <item>3.3. Propiedades de alto valor nutricional del producto</item>
+    </string-array>
+
 </resources>

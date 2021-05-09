@@ -1,11 +1,12 @@
-package com.devzamse.tesis.view;
-
-import androidx.appcompat.app.AppCompatActivity;
+package pe.edu.unmsm.sistemas.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import com.devzamse.tesis.R;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import pe.edu.unmsm.sistemas.R;
 
 
 public class Splash extends AppCompatActivity {

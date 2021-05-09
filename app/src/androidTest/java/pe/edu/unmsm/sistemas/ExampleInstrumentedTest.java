@@ -1,4 +1,4 @@
-package com.devzamse.tesis;
+package pe.edu.unmsm.sistemas;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.devzamse.tesis", appContext.getPackageName());
+        assertEquals("pe.edu.unmsm.sistemas", appContext.getPackageName());
     }
 }

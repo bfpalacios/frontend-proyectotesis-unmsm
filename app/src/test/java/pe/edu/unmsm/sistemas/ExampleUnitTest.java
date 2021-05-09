@@ -1,4 +1,4 @@
-package com.devzamse.tesis;
+package pe.edu.unmsm.sistemas;
 
 import org.junit.Test;
 

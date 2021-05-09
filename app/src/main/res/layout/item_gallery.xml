@@ -7,7 +7,7 @@
     android:layout_margin="10dp" android:background="@drawable/style_card_menu" android:elevation="5dp">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivimagen"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -27,22 +27,23 @@
         android:text="Camu camu"
         android:textSize="20sp"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintStart_toEndOf="@+id/ivimagen"
+        app:layout_constraintTop_toTopOf="@+id/ivimagen" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtcodigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cod: 123456"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/txtnombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
 
     <TextView
+        android:id="@+id/txtprecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Precio unitario: S/ 2.00"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/txtcodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtcodigo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

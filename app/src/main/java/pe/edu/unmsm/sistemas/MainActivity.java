@@ -1,16 +1,14 @@
-package com.devzamse.tesis.view;
+package pe.edu.unmsm.sistemas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.devzamse.tesis.R;
-
-public class Information extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_information);
+        setContentView(R.layout.activity_main);
     }
 }

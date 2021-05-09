@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/APPMOVILCITAS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Loginjava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WebView-Android-Sample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/davidocs-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frontend-proyectotesis-unmsm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/innovationChallenge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kallpa-it" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kiosko-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/quickeat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/recyclerview-paginated" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tarot-app" vcs="Git" />
   </component>
 </project>
