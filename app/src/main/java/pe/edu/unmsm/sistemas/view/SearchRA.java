@@ -22,6 +22,27 @@ public class SearchRA extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_r);
         this.ScanQr();
+//        Services services = new Services();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                List<Product> list = services.getProductxCodigo("1234");
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        if(list.size()>0){
+//                            Bundle bundle=new Bundle();
+//                            bundle.putSerializable("producto", list.get(0));
+//                            Intent intent = new Intent(SearchRA.this, ProductDetail.class);
+//                            intent.putExtras(bundle);
+//                            startActivity(intent);
+//                        }else{
+//                            //NO ENCONTRO NADA
+//                        }
+//                    }
+//                });
+//            }
+//        }).start();
     }
 
 
@@ -34,7 +55,7 @@ public class SearchRA extends AppCompatActivity {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    List<Product> list = services.getProductxCodigo("1234");
+                    List<Product> list = services.getProductxCodigo(result.getContents());
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

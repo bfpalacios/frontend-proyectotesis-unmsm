@@ -77,7 +77,7 @@ public class RecyclerProductAdapter extends RecyclerView.Adapter<RecyclerProduct
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int i) {
-        Picasso.get().load(listaProduct.get(i).getRutaImagen()).fit().into(holder.ivimagen);
+        Picasso.get().load(listaProduct.get(i).getRutaImagen()).fit().placeholder(R.drawable.logo_unmsm).into(holder.ivimagen);
         holder.txtnombre.setText(listaProduct.get(i).getNombreProducto());
         holder.txtcodigo.setText("cod: "+ listaProduct.get(i).getCodigoProducto());
         holder.txtprecio.setText("Precio unitario: "+ listaProduct.get(i).getPrecioProducto());

@@ -5,19 +5,22 @@ import java.io.Serializable;
 public class Product implements Serializable {
 
     private int idProducto;
-    private String nombreProducto;
+    private String codigoPatron;
     private String codigoProducto;
+    private String nombreProducto;
     private double precioProducto;
     private String enfermedadCronicaQueCombate;
     private String regionOriunda;
     private String menuAPreparar;
     private String localDondeComprar;
     private String rutaImagen;
+    private String rutaImagen3d;
 
     public Product(){}
 
-    public Product(int idProducto,String nombreProducto, String codigoProducto, double precioProducto, String enfermedadCronicaQueCombate, String regionOriunda, String menuAPreparar, String localDondeComprar, String rutaImagen) {
+    public Product(int idProducto, String codigoPatron,String nombreProducto, String codigoProducto, double precioProducto, String enfermedadCronicaQueCombate, String regionOriunda, String menuAPreparar, String localDondeComprar, String rutaImagen, String rutaImagen3d) {
         this.idProducto = idProducto;
+        this.codigoPatron = codigoPatron;
         this.nombreProducto = nombreProducto;
         this.codigoProducto = codigoProducto;
         this.precioProducto = precioProducto;
@@ -26,6 +29,7 @@ public class Product implements Serializable {
         this.menuAPreparar = menuAPreparar;
         this.localDondeComprar = localDondeComprar;
         this.rutaImagen = rutaImagen;
+        this.rutaImagen3d = rutaImagen3d;
     }
 
     public int getIdProducto() {
@@ -92,6 +96,14 @@ public class Product implements Serializable {
         this.rutaImagen = rutaImagen;
     }
 
+    public String getRutaImagen3d() {
+        return rutaImagen3d;
+    }
+
+    public void setRutaImagen3d(String rutaImagen3d) {
+        this.rutaImagen3d = rutaImagen3d;
+    }
+
     public String getMenuAPreparar() {
         return menuAPreparar;
     }
@@ -100,17 +112,28 @@ public class Product implements Serializable {
         this.menuAPreparar = menuAPreparar;
     }
 
+    public String getCodigoPatron() {
+        return codigoPatron;
+    }
+
+    public void setCodigoPatron(String codigoPatron) {
+        this.codigoPatron = codigoPatron;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
-                "nombreProducto='" + nombreProducto + '\'' +
+                "idProducto=" + idProducto +
+                ", codigoPatron='" + codigoPatron + '\'' +
                 ", codigoProducto='" + codigoProducto + '\'' +
+                ", nombreProducto='" + nombreProducto + '\'' +
                 ", precioProducto=" + precioProducto +
                 ", enfermedadCronicaQueCombate='" + enfermedadCronicaQueCombate + '\'' +
                 ", regionOriunda='" + regionOriunda + '\'' +
                 ", menuAPreparar='" + menuAPreparar + '\'' +
                 ", localDondeComprar='" + localDondeComprar + '\'' +
                 ", rutaImagen='" + rutaImagen + '\'' +
+                ", rutaImagen3d='" + rutaImagen3d + '\'' +
                 '}';
     }
 }

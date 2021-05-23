@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -11,15 +12,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.JsonObject;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import pe.edu.unmsm.sistemas.R;
 import pe.edu.unmsm.sistemas.data.Services;
+import pe.edu.unmsm.sistemas.model.FinishService;
 import pe.edu.unmsm.sistemas.model.Product;
 import pe.edu.unmsm.sistemas.view.recycler.RecyclerProductAdapter;
 
-public class SearchProduct extends AppCompatActivity {
+public class SearchProduct extends AppCompatActivity implements FinishService {
 
     List<Product> listaProductos = new ArrayList();
     RecyclerView recyclerView;
@@ -82,20 +90,51 @@ public class SearchProduct extends AppCompatActivity {
 
     public void getCargarLista() {
 
-        Services services = new Services();
         new Thread(new Runnable() {
             @Override
             public void run() {
-                listaProductos = services.getListaProductos();
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        productAdapter.actualizar();
-                    }
-                });
+                Services services = new Services();
+                services.getListaProductos(SearchProduct.this);
             }
         }).start();
     }
 
 
+    @Override
+    public void responseService(String res) {
+        listaProductos.clear();
+        if(res!=""){
+            JSONArray array = null;
+            try {
+                JSONObject jsonObject = new JSONObject(res);
+                array = jsonObject.getJSONArray("listarProductos");
+                for (int i = 0; i < array.length(); i++) {
+                    JSONObject json = array.getJSONObject(i);
+                    listaProductos.add(new Product(
+                            json.getInt("idProducto"),
+                            json.getString("codigoPatron"),
+                            json.getString("nombreProducto"),
+                            json.getString("codigoProducto"),
+                            json.getDouble("precioProducto"),
+                            json.getString("enfermedadCronicaQueCombate"),
+                            json.getString("regionOriunda"),
+                            json.getString("menuAPreparar"),
+                            json.getString("localDondeComprar"),
+                            json.getString("rutaImagen"),
+                            json.getString("rutaImagen3D")
+                    ));
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    productAdapter.actualizar();
+                }
+            });
+        }
+
+
+    }
 }
